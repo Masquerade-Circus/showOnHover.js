@@ -1,0 +1,28 @@
+{
+  "name": "showOnHover.js",
+  "title": "showOnHover",
+  "description": "Simple small 1 kb jQuery Plugin for create a hover effect.",
+  "keywords": [
+    "effect",
+    "content",
+	"animate",
+	"animations"
+    ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Masquerade Circus",
+    "url": "http://masquerade-circus.creaken.com"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }, {
+    "type": "GPLv2",
+    "url": "http://opensource.org/licenses/GPL-2.0"
+  }],
+  "homepage": "https://github.com/Masquerade-Circus/showOnHover.js",
+  "demo": "http://masquerade-circus.creaken.com/Plugins/showOnHover/",
+  "dependencies": {
+    "jquery": ">=1.4.x"
+  }
+}

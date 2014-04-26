@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			body,div,ul,li, img, a {margin:0; padding:0; outline: 0; text-decoration: none;}
+			a{color: cornflowerblue;}
+			a:hover{color: cadetblue;}
+			a.download{text-decoration:underline;}
+			html,body{height: 100%;}
+			body{font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; margin: 0 auto; padding: 2%;}
+			.description{font-size: 1.4em; display: block; text-align: center;}
+			.tc{text-align: center}
+			.texto{padding: 10px;margin-bottom: 5px;}
+			.gray{color: #666;font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+			.container{border: 1em; padding: 2em; margin: 2em; text-align: center;}
+			.btn{width: 30%; margin: 0 0 0 20px; padding: 0.5em 2.5em; display: inline-block; background: #ccc; cursor:pointer;}
+			.btn:hover{background: green; color: #fff}
+			.log, .code{background: #0A0704; color: #ccc; padding: 1em; margin: 1em 2em;font-family: Monaco, Consolas, "Lucida Console", monospace;}
+			.log{background: #ccc; color: #0A0704;}
+			img{width: 100%; height: auto;}
+			.button{margin: 0.5em; padding: 0.5em 1.5em; background: #ccc; color: #000; float: left; cursor: pointer;}
+			.button:hover{background: #000; color: #ccc}
+			.active{background: green; color: #fff}
+			.reset:hover{background: red; color: #fff;}
+			.github{position: absolute; top:0; right: 0; display:block;}
+			.legal{position: fixed; bottom:0; right: 0; background: #fff; padding: 0.2em 1.5em; box-shadow: 0 0 0.3em; text-align: right;}
+			.clear{clear: both;}
+			
+			.code-example, .inline{width: 30%; position: relative; float: left; margin: 0 1% 1% 0; vertical-align: top; text-align: left;}
+			.code-example{width: 65%;}
+			.inline img{width: 100%; height: auto;}
+			.inline .code{margin: 1em 0}
+			.inline .log{margin: 0}
+		 </style>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="showOnHover.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var log = $('.log');
+				$('.showOnHover').showOnHover({
+					fx: 'rt',
+					durationIn: 600,
+					durationOut: 1200,
+					easingIn: 'easeOutBounce',
+					easingOut: 'easeInOutElastic',
+					enter: function(){log.html('Animation In started ...');}, 
+					complete: function(){log.html('Animation In completed.');},
+					out: function(){log.html('Animation Out started ...');},
+					end: function(){log.html('Animation Out completed.');} 
+				});
+			});
+		</script>
+	</head>
+<body>
+				<a href="http://github.com/Masquerade-Circus/showOnHover.js" title="Fork me on Github" class="github" target="_blank"><img src="github.png" alt="Github" width="149" height="149"></a>
+				<h1 class="tc"><b>showOnHover</b></h1>
+				<b class="description">
+					Simple small 1 kb jQuery Plugin for create a hover effect.
+					<br><br><a href="https://github.com/Masquerade-Circus/showOnHover.js/archive/master.zip" title="Download" class="download" target="_blank">Download</a>
+				</b>
+				
+				<br><br><h2>How to use: </h2>
+				Call the plugin on the set of elements to add the effect. 
+				
+				<br><br><h2>Options: </h2>
+				<div class="code">
+					$(selector).showOnHover(options);
+					<br><br>$('elem').showOnHover({
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	fx: 'fade',
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	easingIn: 'swing',
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	easingOut: 'swing',
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	durationIn: 400,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	durationOut: 400,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	enter: function,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	complete: function,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	out: function,
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	end: function
+					<br>});
+				</div>
+				
+				<br><br><h2>Example: </h2>
+				<div class="inline">
+					<div>
+						<img src="http://lorempixel.com/200/200/abstract"/>
+						<div class="showOnHover"><img src="http://lorempixel.com/200/200/fashion"/></div>
+					</div>
+				</div>
+				<div class="code-example">
+					<div class="log">Hover the image to star the animation.</div>
+					<div class="code">
+						var log = $('.log');
+						<br>$('.showOnHover').showOnHover({
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	fx: 'rt',
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	durationIn: 600,
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	durationOut: 1200,
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	easingIn: 'easeOutBounce',
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	easingOut: 'easeInOutElastic',
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	enter: function(a){log.html('Animation In started ...');}, 
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	complete: function(){log.html('Animation In completed.');},
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	out: function(){log.html('Animation Out started ...');},
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	end: function(){log.html('Animation Out completed.');} 
+						<br>});
+					</div>
+				</div>
+				<br class="clear">
+				
+				<br><br><h2>Effects: </h2>
+				<br>'t' = top, 'b' = bottom, 'l' = left, 'r' = right, 'fade', 'hide'.
+				<br>You can use any valid pair of position fx, example: 't', 'tr', 'rt', 'r', 'rb', 'br', 'b', 'bl', 'lb', 'l', 'lt', 'tl'.
+				<br>You can't mix 'fade' and 'hide' with position fx in the options.
+				
+				<br><br><h2>Easing: </h2>
+				For more advanced easing options you can use the <a href="http://gsgd.co.uk/sandbox/jquery/easing/" title="Easing Plugin" target="_blank">Easing Plugin</a> which is used in the example. 
+				
+				<br><br><h2>Legal: </h2>
+				Author & copyright (c) 2013: <a href="http://masquerade-circus.creaken.com" title="Masquerade Circus" target="_blank">Masquerade Circus</a>
+				<br>Dual <a href="http://opensource.org/licenses/MIT" title="MIT" target="_blank">MIT</a> & <a href="http://opensource.org/licenses/GPL-2.0" title="GPLv2" target="_blank">GPLv2</a> license
+				<br><br><br><br>
+</body>
+</html>

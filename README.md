@@ -27,7 +27,9 @@ Call the plugin on the set of elements to add the effect.
 
 ##Effects:
 't' = top, 'b' = bottom, 'l' = left, 'r' = right, 'fade', 'hide'.
+
 You can use any valid pair of position fx, example: 't', 'tr', 'rt', 'r', 'rb', 'br', 'b', 'bl', 'lb', 'l', 'lt', 'tl'.
+
 You can't mix 'fade' and 'hide' with position fx in the options.
 
 ##Easing:

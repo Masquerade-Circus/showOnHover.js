@@ -9,7 +9,7 @@ http://masquerade-circus.creaken.com/Plugins/showOnHover/
 ##How to use:
 Call the plugin on the set of elements to add the effect. 
 				
-##Options Min and Lite versions:
+##Options:
 ```javascript
 	$(selector).showOnHover(options);
 	$('elem').showOnHover({

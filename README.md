@@ -1,4 +1,4 @@
-simpleAccordion.js
+showOnHover.js
 =================
 
 Simple small 1 kb jQuery Plugin for create a hover effect.

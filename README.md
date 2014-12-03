@@ -1,7 +1,7 @@
 showOnHover.js
 =================
 
-Simple small 1 kb jQuery Plugin for create a hover effect.
+Simple small 1 kb jQuery Plugin for create hover effects.
 
 ## Demo
 http://masquerade-circus.creaken.com/Plugins/showOnHover/

@@ -38,3 +38,7 @@ For more advanced easing options you can use the [Easing Plugin](http://gsgd.co.
 # Legal
 Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.creaken.com)
 Dual [MIT](http://opensource.org/licenses/MIT) & [GPLv2](http://opensource.org/licenses/GPL-2.0) license
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Masquerade-Circus/showonhover.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

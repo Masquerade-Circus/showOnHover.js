@@ -4,7 +4,7 @@ showOnHover.js
 Simple small 1 kb jQuery Plugin for create hover effects.
 
 ## Demo
-http://masquerade-circus.creaken.com/Plugins/showOnHover/
+http://masquerade-circus.net/myPlugins/showOnHover/
 
 ##How to use:
 Call the plugin on the set of elements to add the effect. 
@@ -36,9 +36,6 @@ You can't mix 'fade' and 'hide' with position fx in the options.
 For more advanced easing options you can use the [Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/). 
 
 # Legal
-Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.creaken.com)
+Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.net)
 Dual [MIT](http://opensource.org/licenses/MIT) & [GPLv2](http://opensource.org/licenses/GPL-2.0) license
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Masquerade-Circus/showonhover.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
